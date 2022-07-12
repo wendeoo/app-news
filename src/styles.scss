@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+@import './themes/remc.scss';
+@import './themes/variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: var(--blue-multi-dark);
+}
+
+body {
+  overflow-x: hidden;
+  &.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.2s ease-out;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--blue-multi-base);
+    text-decoration: underline;
+  }
+  &:active {
+    color: var(--blue-multi-base);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white);
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: remc(46);
+}
+
+h2 {
+  font-size: remc(30);
+}
+
+h3 {
+  font-size: remc(20);
+  line-height: remc(28);
+}
+
+h4 {
+  font-size: remc(10);
+}
+
+// body,
+// html {
+//   &::-webkit-scrollbar {
+//     display: none; // Chrome, Safari and Others
+//     -ms-overflow-style: none; /* IE and Edge */
+//     scrollbar-width: none; /* Firefox */
+//   }
+// }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Helvetica Neue', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto Condensed', "Helvetica Neue", sans-serif; }

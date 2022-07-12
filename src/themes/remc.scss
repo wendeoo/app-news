@@ -1,0 +1,4 @@
+@function remc($size) {
+  $value: calc($size / 16);
+  @return #{$value}rem;
+}

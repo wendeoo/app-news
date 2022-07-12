@@ -1,0 +1,59 @@
+
+.card-news {
+  margin-bottom:32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .news {
+    margin: 16px;
+    max-width: 768px;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226, 226, 226);
+
+    &-date {
+      font-size: 12px;
+      font-style: italic;
+      color: rgb(0, 0, 0);
+      height: 24px;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0.25em;
+      text-align: left;
+    }
+
+    &-summary {
+      font-size: 14px;
+      padding-bottom: 0.5em;
+      text-align: justify;
+    }
+
+    &-image-content {
+
+      &-image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    &-link {
+      text-align: end;
+      margin: 8px 0;
+
+      &:hover {
+        color: darkorchid;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+  }
+}
