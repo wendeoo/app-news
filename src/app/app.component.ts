@@ -10,14 +10,17 @@ import { News } from './interfaces/news';
 export class AppComponent implements OnInit {
   title = 'app-news';
 
-  public news?: News;
-  public sources: string[] = [
+  public news: News = {};
+  public sources: any[] = [
     'google-news-br',
     'blasting-news-br',
-    'globo',
     'info-money',
+    'globo',
   ];
-  public sourceIndex: number = 1;
+
+  public sourceIndex: number = Math.floor(Math.random() * this.sources.length);
+  public sourceNameIndex: string = '';
+  public articles: any;
 
   constructor(private newsService: NewsService) {}
 
@@ -30,7 +33,20 @@ export class AppComponent implements OnInit {
       .getNews(this.sources[this.sourceIndex])
       .subscribe((response) => {
         this.news = response;
-        console.log(this.news);
+        this.articles = response.articles;
       });
+  }
+
+  public changeSource(): void {
+    this.sourceIndex = (this.sourceIndex + 1) % this.sources.length;
+    this.getNews();
+  }
+
+  public goTo(url: any): void {
+    window.open(url, '_blank');
+  }
+
+  public goToTop(): void {
+    window.scrollTo(0, 0);
   }
 }

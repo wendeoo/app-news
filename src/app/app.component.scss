@@ -1,17 +1,59 @@
 
 .card-news {
-  margin-bottom:32px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  .sources {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    padding: 16px 8px;
+    background-color: #ebebeb;
+    border: 2px solid #000000;
+    border-radius: 4px;
+
+    .source-title {
+      margin-right: 8px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .source-name {
+      margin-right: 8px;
+      text-align: center;
+      font-weight: bold;
+      color: #04AA6D;;
+    }
+
+    .sources-btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 8px;
+      font-size: 16px;
+      border: none;
+      width: 80px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #00311d;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
   .news {
     margin: 16px;
-    max-width: 768px;
+    max-width: 600px;
     padding: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(226, 226, 226);
+    background-color: #ebebeb;
+    border: 2px solid #000000;
+    border-radius: 4px;
 
     &-date {
       font-size: 12px;
@@ -31,6 +73,24 @@
       font-size: 14px;
       padding-bottom: 0.5em;
       text-align: justify;
+      display: flex;
+      flex-direction: column;
+
+      .news-btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        margin-top: 8px;
+        align-self: flex-end;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #00311d;
+          transition: all 0.2s ease-in-out;
+        }
+      }
     }
 
     &-image-content {
@@ -54,6 +114,22 @@
         color: darkorchid;
         transition: all 0.1s ease-in-out;
       }
+    }
+  }
+
+  .btn-top {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    &:hover {
+      background-color: #00311d;
+      transition: all 0.2s ease-in-out;
     }
   }
 }
