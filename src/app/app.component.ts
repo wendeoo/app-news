@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     'google-news-br',
     'blasting-news-br',
     'info-money',
-    'globo',
+    'CNN',
   ];
 
   public sourceIndex: number = Math.floor(Math.random() * this.sources.length);

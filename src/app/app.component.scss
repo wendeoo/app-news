@@ -14,7 +14,7 @@
     max-width: 600px;
     padding: 16px 8px;
     background-color: #ebebeb;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 4px;
 
     .source-title {
@@ -50,9 +50,9 @@
     margin: 16px;
     max-width: 600px;
     padding: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     background-color: #ebebeb;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 4px;
 
     &-date {
@@ -60,6 +60,7 @@
       font-style: italic;
       color: rgb(0, 0, 0);
       height: 24px;
+      margin-top: 8px;
     }
 
     &-title {
